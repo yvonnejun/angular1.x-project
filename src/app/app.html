@@ -1,0 +1,26 @@
+<style type="text/css">
+.viewLayout{
+    width:calc(100% - 90px);
+    float: left;
+}
+</style>
+
+<div style="background: #fff;min-height:768px;">
+    <!--注意：ng-include=""双引号里面是给一个返回html文件名的变量的，若直接给文件名就得再用单引号引一次，并且是绝对路径-->
+   
+    <!--leftmenubar自定义指令的样式写在模板的html文件里面即可，在这里也是有效果的-->
+    <!--<leftmenubar></leftmenubar>-->
+    <!--main路由下面的自路由才会现在app.html模板的ui-view里面-->
+    <!--并排显示还是左浮动效果最好，上面固定宽度，下面也就是右边width:calc(100% - 90px)即可无需margin-left设置-->
+    <!--<div ui-view="cartView" class="viewLayout"></div>
+    <div ui-view="addbookView" class="viewLayout"></div>
+    <div ui-view="demoView" class="viewLayout"></div>-->
+
+    <div id="header" ng-if='layout.hasheader' ng-include="'src/app/header/header.html'" onload="headerloaded()"></div> 
+    <pricingdialog ng-if='layout.hasPricingDialog'></pricingdialog>
+    <div ui-view></div>
+    <chatbox ng-if='layout.hasChatbox'></chatbox>
+    <qqclient ng-if='layout.hasQQclient'></qqclient>
+    <connectus ng-if='layout.hasConnectUs'></connectus>
+    <div id="footer" ng-if='layout.hasfooter' ng-include="'src/app/footer/footer.html'" onload="footerloaded()"></div>
+</div>

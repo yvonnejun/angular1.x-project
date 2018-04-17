@@ -1,0 +1,46 @@
+#connectus{
+    text-align: center;
+}
+.page__content {
+    margin-top: 50px;
+}
+.page__text__container {
+    text-align: center;
+}
+.page__text__title {
+    font-size: 23pt;
+    color: #666;
+    margin-bottom: 10px;
+}
+.page__content__container {
+    margin-top: 60px;
+}
+.page__text__content {
+    font-size: 15pt;
+    color: #bfbfbf;
+}
+
+.page__text__content>p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+}
+.page__content .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.page__content .list li {
+    margin: 0 20px;
+    display: inline-block;
+}
+.page__content .list li .img {
+    margin-bottom: 15px;
+}
+#connectus ul li img {
+    width: 100px;
+}
+.list__text__content.description {
+    color: #999;
+}

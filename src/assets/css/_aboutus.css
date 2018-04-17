@@ -1,0 +1,28 @@
+#about-container {
+    text-align: center;
+    margin-bottom: 100px;
+}
+#team-photos-container {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.team-photo {
+    display: inline-block;
+    width: 100px;
+    margin: 10px;
+}
+#about-explanation-container {
+    width: 700px;
+    margin: 0 auto;
+}
+.about-explanation {
+    font-size: 16px;
+    text-align: justify;
+}
+.page__text__content {
+    color: #999;
+}

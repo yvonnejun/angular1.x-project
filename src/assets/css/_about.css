@@ -1,0 +1,113 @@
+.about-context{
+    min-height: 768px;
+    background-color: #fff;
+}
+/*about页面第一屏*/
+.about-introduce{
+    background:url('/src/assets/img/bgintroductionpage.jpg') no-repeat bottom center;
+    background-size: cover;
+    height: 720px;
+    text-align: center;
+}
+#landing-title {
+    margin-top: 20px;
+    padding-top: 160px;
+}
+.page__text__title {
+    font-size: 23pt;
+    color: #666;
+    margin-bottom: 10px;
+}
+.explanation {
+    text-align: center;
+    padding-top: 20px;
+}
+.explanation-line {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #999;
+    line-height: 30px;
+}
+.explanation-line p {
+    margin: 0 auto 10px auto;
+    max-width: 800px;
+}
+.page__btn__container {
+    margin-top: 60px;
+}
+.page__btn__container .btn, .page__content__container .btn {
+    display: inline-block;
+}
+.btn, .start {
+    width: 270px;
+    height: 66px;
+    background: #FBB03B;
+    border: 2px solid #FBB03B;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 0;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px #E6E6E6;
+    -webkit-transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
+}
+.btn__text, .start-text {
+    height: 66px;
+    line-height: 66px;
+    vertical-align: center;
+    font-size: 14pt;
+    color: #FFF;
+}
+/*about页面第一屏end*/
+
+/*about页面第二屏*/
+.about-recommendation{
+    height: 1200px;
+    width: 100%;
+    background-color: #f2f2f2;
+    margin-top: -90px;
+}
+.recommendation-info-wrapper {
+    padding-top: 100px;
+    position: relative;
+    width: 870px;
+    height: 300px;
+    margin: 90px auto;
+}
+.web-right {
+    position: absolute;
+    width: 425px;
+    right: 0;
+}
+.recommendation-image {
+    width: 400px;
+}
+.web-left {
+    position: absolute;
+    width: 425px;
+    left: 0;
+}
+.page__text__title {
+    font-size: 23pt;
+    color: #666;
+    margin-bottom: 10px;
+}
+.recommendation-explanation {
+    font-size: 16px;
+    color: #999;
+    width: 300px;
+    margin-bottom: 20px;
+}
+.recommender-name {
+    font-size: 12px;
+    color: #999;
+}
+
+
+
+
+/*about页面第二屏end*/

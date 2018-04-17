@@ -1,0 +1,30 @@
+<div class="headerBg">
+    <ul class="header-nav">
+        <li ng-repeat="navitem in navs">
+            <a ui-sref="{{navitem.navtourl}}" class="header-nav-item">
+                <span>{{navitem.navname}}</span>
+            </a>
+        </li>
+    </ul>
+
+    <ul class="header-nav header-nav-fixed">
+        <li ng-if="logined">
+            <a ui-sref="index" class="header-nav-item item-logout" ng-click="logout()"><span style="color:#FBB03B">退出</span></a>
+        </li>
+        <li ng-if="logined">
+            <a ui-sref="member">
+                <div class="account-link">
+                    <span class="account-link-text">我的设计</span>
+                </div>
+            </a>
+        </li>
+        <li ng-if="!logined">
+            <a ui-sref="login">
+                <div class="account-link">
+                    <span class="account-link-text">登录/注册</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <button type="button" class="changeLang" ng-click="switchLanguage()" translate>CHANGELANGBTN_TXT</button>
+</div>

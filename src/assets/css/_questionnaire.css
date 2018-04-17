@@ -1,0 +1,110 @@
+#questionnaire_wrapper{
+    width: 100%;
+    height: 488px;
+}
+.input_area{
+    height: 350px;
+    background-color: #fff;
+    padding-top: 50px;
+}
+.input {
+    display: block;
+    width: 360px;
+}
+#generator__title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#title__brand {
+    height: 50px;
+    line-height: 50px;
+    margin-right: 20px;
+    vertical-align: top;
+}
+.title__wrapper {
+    display: inline-block;
+    text-align: left;
+}
+.title__text span {
+    color: #FBB03B;
+}
+.title__text div {
+    display: inline-block;
+    border-radius: 4px;
+    border-style: dashed;
+    border-color: #FBB03B;
+    border-width: 2px;
+    color: #666;
+    font-size: 18px;
+    height: 45px;
+    line-height: 44px;
+    padding: 0 10px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.page .row .input {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    font: 13.3333px Arial;
+}
+.input input, .input textarea {
+    border: 0;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 2px solid #FBB03B;
+    padding: 10px;
+    font-size: 40px;
+    color: #999;
+    outline: none;
+    -moz-outline: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.input.label label {
+    display: block;
+    width: 100%;
+    text-align: right;
+    color: #CCC;
+    font-size: 12px;
+    padding-left: 20px;
+}
+.input_btn{
+    position: relative;
+    background-color: #FFF;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    height: 110px;
+    padding-top: 30px;
+    width: 100%;
+}
+.step__actions {
+    text-align: center;
+}
+.button.disabled {
+    background-color: #B2B2B2;
+    border-color: #B2B2B2;
+}
+.step__item {
+    color: #999;
+    display: inline-block;
+    width: 270px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 10px 10px 10px #E6E6E6;
+    border: 2px solid #FBB03B;
+    transition: background-color .5s ease-out;
+}
+.button__text {
+    height: 66px;
+    line-height: 66px;
+    vertical-align: center;
+    font-size: 14pt;
+    color: #FFF;
+
+}

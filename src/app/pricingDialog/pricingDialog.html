@@ -1,0 +1,41 @@
+<style type="text/css">
+.btn {
+    width: 210px;
+    height: 46px;
+    cursor: pointer;
+}
+.btn__text {
+    height: 46px;
+    line-height: 46px;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-size: 15px;
+}
+</style>
+<!-- popup_mask表示遮罩背景层 -->
+<div class="popup--mask" role="#pricing__dialog">
+  <div class="popup--container">
+    <!-- #pricing__dialog才是真正的弹窗 -->
+    <div id="pricing__dialog" class="popup">
+      <p class="dialog__title">100%满意保证</p>
+      <div class="dialog__content">
+        <p class="dialog__desc">现在购买<span class="special">专业套餐</span></p>
+        <p class="dialog__desc"><span class="special">7天内</span>可更换任意LOGO</p>
+        <p class="dialog__desc">我们的专业设计师也能协助您</p>
+        <p class="dialog__desc">修改颜色、字体等细节到您满意</p>
+        <p id="icon__container">
+          <img src="/src/assets/img/7days.svg" alt="">
+          <img src="/src/assets/img/change.svg" alt="">
+        </p>
+      </div>
+      <div class="btn dialog__btn">
+        <span class="btn__text">我知道了！</span>
+      </div>
+    </div>
+  </div>
+</div>

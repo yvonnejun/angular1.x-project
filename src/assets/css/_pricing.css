@@ -1,0 +1,115 @@
+#pricing-cards-container {
+    width: 960px;
+    min-width: 930px;
+    margin: 0 auto;
+    overflow: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.card {
+    position: relative;
+    margin-top: 60px;
+    width: 280px;
+    height: 850px;
+    background-color: #F2F2F2;
+    float: left;
+    margin-bottom: 150px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 10px 10px 10px #E6E6E6;
+}
+.card-left-spacing {
+    margin-left: 40px;
+}
+.card-focus {
+    margin-top: 60px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #FBB03B;
+}
+.card-focus .pricing__tag {
+    left: -1px;
+}
+.pricing__tag {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 120px;
+    box-shadow: 10px 10px 10px #E6E6E6;
+}
+.pricing__header {
+    position: relative;
+    width: 100%;
+    top: 0;
+    margin-top: 70px;
+    text-align: center;
+}
+.pricing__title {
+    font-size: 28pt;
+    color: #666;
+    margin-bottom: 20px;
+}
+.pricing__desc {
+    width: 80%;
+    margin: auto;
+    font-size: 13pt;
+    text-align: center;
+    color: #666;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pricing__info {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    color: #999;
+}
+.pricing__info__item {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+.pricing__info__item .fa {
+    float: left;
+}
+.pricing__info__item .fa:before {
+    vertical-align: middle;
+}
+.pricing__info__item span {
+    display: block;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.pricing__footer {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.pricing__special {
+    color: #999;
+    font-size: 14px;
+}
+.pricing__number {
+    font-size: 38pt;
+    color: #F1923D;
+}
+.view-item {
+    display: none;
+    margin: auto;
+}
+.download-link {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+.download-link a {
+    color: #FBB03B;
+    font-size: 15px;
+}

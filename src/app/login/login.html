@@ -1,0 +1,48 @@
+<div id="registration-form" class="cd-user-modal is-visible">
+  <form name="userform" ng-submit="loginuser()" novalidate>
+    <div class="popup cd-user-modal-container">
+      <div class="long-answer-wrapper" id="phone-answer-wrapper">
+        <input class="registration-input" id="phone-answer" name="phonenumber" ng-model="phonenum" type="text" 
+               placeholder="输入手机号" maxlength="11" ng-pattern="/^1[3,4,5,7,8]\d{9}$/" ng-focus="focused = true" required>
+      </div>
+      <div class="regexinfo" ng-hide="focused">
+        <span ng-show="userform.phonenumber.$error.pattern">请输入正确的手机号码！</span>
+        <span ng-show="userform.phonenumber.$error.required && !focused">请输入手机号码！</span>
+      </div>
+      <div id="code-answer-wrapper">
+        <input class="registration-input" id="code-answer" name="VerifCode" ng-pattern="VerificationCode" type="text" ng-model='VerificationCode' placeholder="输入验证码" ng-disabled="!disbtn" ng-focus="vfcfocused = true" required>
+      </div>
+
+      <button id="send-button" ng-click="sendVerificationCode($event)" ng-disabled="disbtn" ng-style="{'background-color':phongNumValid == true ? '#ccc' : '#F0A02D'}">
+        <span id="send-text">{{sendCode}}</span>
+      </button>
+
+      <div class="regexinfo" ng-hide="vfcfocused">
+        <span ng-show="userform.VerifCode.$error.pattern">请输入正确的验证码！</span>
+        <span ng-show="userform.VerifCode.$error.required && !focused">请输入验证码！</span>
+      </div>
+
+      <div id="registration-button" class="registration-button">
+        <!-- <span class="start-text">注册/登录</span> -->
+        <button type="submit" class="btn start start-text" ng-click="registerorlogin()">注册/登录</button>
+      </div>
+      <span id="powered-by">Powered by</span>
+      <a href="/" target="_blank">
+        <img id="registration-logo" src="/src/assets/img/xzlogo_logo.svg">
+      </a>
+
+      <div id="registration-explanation">
+        <p>
+          <b>免费尝试</b>
+          <br> 无需任何费用，只要简单描述您的品牌，小智会自动产生六个设计供您选择。</p>
+        <p>
+          <b>告别模板</b>
+          <br> 不像其他制作LOGO的工具只提供几种模板。我们的机器学习算法会为每个需求产生独特的定制化LOGO。</p>
+
+        <p>
+          <b>快速简单</b>
+          <br> 再也不用拜托别人设计LOGO了！在小智的帮忙下，你也是个优秀的设计师。</p>
+      </div>
+    </div>
+  </form>
+</div>

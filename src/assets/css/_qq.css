@@ -1,0 +1,22 @@
+#qidian-wpa-qq {
+    position: fixed;
+    z-index: 2000000000;
+    border-radius: 50%;
+    background: #FBB03B;
+    width: 60px;
+    height: 60px;
+    right: 45px;
+    bottom: 45px;
+    cursor: pointer;
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+}
+#qidian-wpa-qq span {
+    background-image: url("/src/assets/img/QQ_client.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}

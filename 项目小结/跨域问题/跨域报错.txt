@@ -1,0 +1,3 @@
+XMLHttpRequest cannot load http://127.0.0.1/shizhan/xiaobailogoservice/registerandlogin/PHP.php. 
+No 'Access-Control-Allow-Origin' header is present on the requested resource. 
+Origin 'http://localhost:8808' is therefore not allowed access.
